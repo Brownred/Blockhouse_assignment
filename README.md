@@ -32,16 +32,16 @@ Follow these steps to get the project up and running:
 
 1. **Clone the repository**:
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Brownred/Blockhouse_assignment
    ```
 2. **Navigate to the project directory**:
    ```bash
-   cd your-project-directory
+   cd Blockhouse_assignment
    ```
 3. **Run Docker Compose**:
    Make sure you have Docker installed and running, then execute:
    ```bash
-   docker-compose up --build
+   docker compose up
    ```
 
 The app should now be running, with the frontend accessible at `http://localhost:3000` and the backend API at `http://localhost:8000`.
@@ -53,4 +53,4 @@ The app should now be running, with the frontend accessible at `http://localhost
 
 ## Additional Notes
 
-The project is deployed on GitHub my github Account 
+The project is deployed on GitHub my github Account `https://github.com/Brownred/Blockhouse_assignment`
