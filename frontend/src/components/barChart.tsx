@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/chart"
 import { useEffect, useState } from "react"
 import { BarChartData } from "@/data/fetch"
+import { BarChartT } from "@/types/types"
 
 export const description = "A bar chart with a label"
 
@@ -32,7 +33,7 @@ const chartConfig = {
 
 export function BarChartComponent() {
 
-const [chartData, setChartData] = useState<any[]>([]);
+const [chartData, setChartData] = useState<BarChartT[]>([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -45,7 +46,7 @@ const [chartData, setChartData] = useState<any[]>([]);
   console.log(chartData);
 
   return (
-    <Card className="w-[40%]">
+    <Card className="">
       <CardHeader>
         <CardTitle>Bar Chart - Products</CardTitle>
         <CardDescription>Total Amount</CardDescription>

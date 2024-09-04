@@ -19,6 +19,7 @@ import {
 } from "@/components/ui/chart"
 import { useEffect, useState } from "react"
 import { PieChartData } from "@/data/fetch"
+import { PieChartT } from "@/types/types"
 
 export const description = "A pie chart with a label"
 
@@ -58,7 +59,7 @@ export function PieChartComponent() {
         },
       } satisfies ChartConfig
 
-    const [chartData, setChartData] = useState<any[]>([]);
+    const [chartData, setChartData] = useState<PieChartT[]>([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -72,7 +73,7 @@ export function PieChartComponent() {
 
 
   return (
-    <Card className="flex flex-col w-[40%]">
+    <Card className="flex flex-col">
       <CardHeader className="items-center pb-0">
         <CardTitle>Pie Chart - Colors</CardTitle>
         <CardDescription>Number of people&rsquo;s Favourite color</CardDescription>
